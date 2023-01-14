@@ -1,0 +1,67 @@
+
+
+@keyframes first {
+    0%,5%,85%,90%,100% {transform: translate(0, 0);}
+    15% {transform: translate(-1200px, 0);}
+    20% {transform: translate(-1200px, 0);}
+    35% {transform: translate(-1200px, 422px);}
+    40% {transform: translate(-1200px, 422px);}
+    55% {transform: translate(1200px, 422px);}
+    60% {transform: translate(1200px, 422px);}
+    75% {transform: translate(1200px, 0);}
+    
+ }
+ @keyframes second {
+    20%,35%,45% {transform: translate(0, -422px);}
+    65% {transform: translate(-1200px, -422px);}
+    85% {transform: translate(-1200px, 0);}
+    0% {transform: translate(0, 0);}
+    10% {transform: translate(0, 0);}
+
+}
+ @keyframes third {
+    0%,100% {transform: translate(0, 0);}
+    45% {transform: translate(0, -422px);}
+    55% {transform: translate(0, -844px);}
+    65% {transform: translate(0, -844px);}
+    70% {transform: translate(0, -844px);}
+    
+ }
+
+
+.slyder {
+    display: flex;
+    background-color: #817C7C;
+    background-image: url(../images/img/icecream-background-pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.slyder__container {
+    margin: auto;
+    width: 1012px;
+    height: 422px;
+}
+
+.slyder__wallpapers {
+    overflow: hidden;
+    width: 1012px;
+    height: 422px;
+}
+
+.slyder__wallpaper-1:nth-child(1) {
+    animation: first 10s infinite;
+}
+
+.slyder__wallpaper-2:nth-child(2) {
+    animation: second 10s infinite;
+}
+
+.slyder__wallpaper-3:nth-child(3) {
+    animation: third 10s infinite;
+}
+
+
+
